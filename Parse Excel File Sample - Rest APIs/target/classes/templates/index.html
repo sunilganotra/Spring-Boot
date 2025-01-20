@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISBN Input</title>
+</head>
+<body>
+    <form action="/check-profitability" method="post">
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required>
+        <button type="submit">Check Profitability</button>
+    </form>
+    <div th:if="${message}" th:text="${message}"></div>
+</body>
+</html>
